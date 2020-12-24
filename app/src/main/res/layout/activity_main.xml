@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/chooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/cmTOmm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="cm to mm" />
+
+        <RadioButton
+            android:id="@+id/cmTOm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="m to cm" />
+
+        <RadioButton
+            android:id="@+id/mTOkm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="km to m" />
+
+        <RadioButton
+            android:id="@+id/KBTOByte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="KB to Byte" />
+
+        <RadioButton
+            android:id="@+id/MBTOKB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="MB to KB" />
+
+        <RadioButton
+            android:id="@+id/GBTOMB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="GB to MB" />
+
+        <RadioButton
+            android:id="@+id/TBTOGB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="TB to GB" />
+
+        <RadioButton
+            android:id="@+id/PBTOTB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="PB to TB" />
+
+        <RadioButton
+            android:id="@+id/EBTOPB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="EB to PB" />
+
+        <RadioButton
+            android:id="@+id/KiBTOKB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="KiB to KB" />
+
+        <RadioButton
+            android:id="@+id/MiBTOMB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="MiB to MB" />
+
+        <RadioButton
+            android:id="@+id/GiBTOGB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="GiB to GB" />
+
+        <RadioButton
+            android:id="@+id/KiBTOBytes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="KiB to Bytes" />
+
+        <RadioButton
+            android:id="@+id/MiBTOKiB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="MiB to KiB" />
+
+        <RadioButton
+            android:id="@+id/GiBTOMiB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="checkButton"
+            android:text="GiB to MiB" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="Value"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chooser"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Answer:"
+        android:textSize="12pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chooser"
+        app:layout_constraintTop_toBottomOf="@+id/Num" />
+
+    <Button
+        android:id="@+id/btnConvertor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="onClickConvert"
+        android:text="轉換"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chooser"
+        app:layout_constraintTop_toBottomOf="@+id/ans" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
